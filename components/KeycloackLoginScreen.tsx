@@ -8,7 +8,6 @@ const KeycloakLoginScreen = () => {
   const handleLogin = async () => {
     try {
       const tokenData = await loginWithKeycloak();
-      // Assuming your Keycloak server returns the user data in the access token
       setUser(tokenData);
     } catch (error) {
       console.error("Login failed:", error);
